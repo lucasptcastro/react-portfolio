@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Faz com que os paddings, margin sejam aplicados na caixa do elemento */
+
+  font-size: 62.5%;
+}
+
+:root {
+  --tw-gradient-from: #06b6d4;
+  --tw-gradient-to: rgb(6 182 212 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #3b82f6;
+
+  --bg-shadow: 100px 100px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  /* background-image: linear-gradient(to right, var(--tw-gradient-stops)); */
+  background: #fbfaff;
+}
+
+footer {
+  padding: 0 35rem;
+}
+
+/* SOCIAL MEDIAS */
+.social-medias {
+  width: max-content;
+}
+
+.social-medias ul {
+  display: flex;
+  gap: 5rem;
+}
+
+.social-medias ul li {
+  list-style: none;
+}
+.social-medias ul li a {
+  text-decoration: none;
+
+  color: black;
+}
+
+/* ===== SMARTPHONES ===== */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+  }
+}
+
+/* ===== TABLETS ===== */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: center;
+
+    margin: 3rem 0 1rem;
+  }
+}
+
+/* ===== IPADS ===== */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  footer {
+    display: flex;
+    justify-content: center;
+
+    padding: 0;
+  }
+}

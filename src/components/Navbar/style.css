@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Faz com que os paddings, margin sejam aplicados na caixa do elemento */
+
+  font-size: 62.5%;
+}
+
+:root {
+  --tw-gradient-from: #06b6d4;
+  --tw-gradient-to: rgb(6 182 212 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #3b82f6;
+
+  --bg-shadow: 100px 100px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  /* background-image: linear-gradient(to right, var(--tw-gradient-stops)); */
+  background: #fbfaff;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+
+  padding: 1.5rem 4rem;
+
+  background: white;
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+
+  justify-content: center;
+
+  list-style: none;
+}
+
+#lnkInicio {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.header ul li a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through red;
+
+  font-size: 1.6rem;
+  transition: all 0.3s linear;
+}
+
+.header ul li a:hover {
+  cursor: not-allowed;
+}
+
+#lnkInicio:hover {
+  padding: 1rem;
+  border-radius: 2rem;
+
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  color: aliceblue;
+
+  transition: all 0.3s linear;
+
+  cursor: pointer;
+}
+
+#logo-title {
+  font-family: "Lilita One", cursive;
+  font-size: 3rem;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* ===== SMARTPHONES ===== */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* HEADER */
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #logo-title {
+    text-align: center;
+  }
+
+  #hamburger-menu {
+    display: block;
+  }
+
+  menu {
+    display: none;
+  }
+
+  .header ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+
+    padding: 1rem 0 2rem 0;
+
+    text-align: center;
+  }
+}
+
+/* ===== TABLETS ===== */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* HEADER */
+  .navbar {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+  }
+
+  .header ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  menu {
+    display: flex;
+  }
+}
+
+/* ===== IPADS ===== */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* HEADER */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  menu {
+    display: block;
+  }
+}
