@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [hiddenMenu, setHiddenMenu] = React.useState("hidden");
@@ -25,12 +26,14 @@ const Navbar: React.FC = () => {
       >
         <ul>
           <li>
-            <a href="#" id="lnkInicio">
+            <Link id="lnkHome" to={`/`}>
               Início
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">xxx</a>
+            <Link id="lnkEducation" to={`/education`}>
+              Educação
+            </Link>
           </li>
           <li>
             <a href="#">xxx</a>
