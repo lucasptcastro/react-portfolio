@@ -42,7 +42,8 @@ body {
   list-style: none;
 }
 
-#lnkInicio {
+#lnkHome,
+#lnkEducation {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
 }
@@ -59,7 +60,8 @@ body {
   cursor: not-allowed;
 }
 
-#lnkInicio:hover {
+#lnkHome:hover,
+#lnkEducation:hover {
   padding: 1rem;
   border-radius: 2rem;
 
