@@ -1,0 +1,49 @@
+.content {
+  border: 1px solid red;
+
+  background: #fbfaff;
+  padding: 60px 400px;
+}
+
+.certifieds-title {
+  display: flex;
+  justify-content: center;
+
+  padding: 30px 0;
+}
+
+.certifieds-title h4 {
+  font-size: 20px;
+}
+
+.devlinks-rocketseat:hover,
+.especializar-rocketseat:hover,
+.python3-cursoemvideo:hover,
+.university:hover {
+  cursor: pointer;
+}
+
+.card-title {
+  font-size: 13px;
+  text-align: center;
+
+  font-weight: 700;
+}
+
+.institution,
+.date {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 10px 0;
+}
+
+.institution h4,
+.date h4 {
+  font-size: 12px;
+}
+
+.institution p,
+.date p {
+  font-size: 12px;
+}
