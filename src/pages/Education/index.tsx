@@ -1,6 +1,8 @@
 import Navbar from "../../components/Navbar/index";
 import "./style.css";
-import { Card, Row, Col, Divider, Space } from "antd";
+import { Card, Row, Col, Divider, Space, Typography, List } from "antd";
+import { AiOutlineFolder, AiOutlineLink } from "react-icons/ai";
+import { TbExternalLink } from "react-icons/tb";
 
 const Education: React.FC = () => {
   return (
@@ -19,8 +21,45 @@ const Education: React.FC = () => {
 
         <Row gutter={[16, 20]}>
           <Col className="devlinks-rocketseat" span={12}>
-            <Card>
-              <p className="card-title">DevLinks</p>
+            <Card className="bg-[#5272ffa1] w-[40rem]">
+              <Row className="flex justify-between items-center">
+                <Col>
+                  <AiOutlineFolder size={30} className="text-white" />
+                </Col>
+                <Col>
+                  <AiOutlineLink size={30} className="text-white" />
+                </Col>
+              </Row>
+              <Row>
+                <Typography.Title level={5}>DevLinks</Typography.Title>
+              </Row>
+              <Row>
+                <Typography.Text></Typography.Text>
+              </Row>
+              <Row>
+                <ul className="flex flex-row gap-5 text-4xl">
+                  <li>
+                    <p>#Fundamentos da programação web</p>
+                  </li>
+                  <li>
+                    <p>#HTML</p>
+                  </li>
+                  <li>
+                    <p>#CSS</p>
+                  </li>
+                  <li>
+                    <p>#JavaScript</p>
+                  </li>
+                  <li>
+                    <p>#Git</p>
+                  </li>
+                  <li>
+                    <p>#Github</p>
+                  </li>
+                </ul>
+              </Row>
+
+              {/* <p className="card-title">DevLinks</p>
               <Divider />
               <div className="institution">
                 <h4>Instituição:</h4>
@@ -29,7 +68,7 @@ const Education: React.FC = () => {
               <div className="date">
                 <h4>Data:</h4>
                 <p>03/2023</p>
-              </div>
+              </div> */}
             </Card>
           </Col>
           <Col className="especializar-rocketseat" span={12}>
